@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+div.card{
+    width: 200px;
+    background-color: white; 
+    height: 280px;
+    transition: transform 0.5s ease;
+        & div.img{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            & a{
+                height: 100%;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                & img{
+                    max-width: 100%; 
+                    max-height: 100%;
+                    object-fit: cover;
+                    
+                }
+            }
+    }
+    a.a-capitulos{
+        display: flex;
+        justify-content: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        align-items: center;
+        margin-top: 10px;
+        width: 150px;
+        height: 30px;
+        border-radius: 7px;
+        background-color: #06444a;
+    }
+    a.a-capitulos:hover{
+        background-color: white;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        font-size: 18px;
+    }
+}   
+
+div.card:hover{
+    transform: perspective(500px) translateY(-5%) 
+    rotateX(25deg) translateZ(0);
+    box-shadow: 1px 5px 33px -33px aqua;
+}
+
+
+/* Aqui foi feito os ajuste para o carrosel de card */
+div.swiper-wrapper{
+    width: 96vw;
+} 
+.swiper-button-prev, .swiper-button-next{
+    height: 47px;
+    width: 37px;
+    border-radius: 100%;
+    color: #46d2e7;
+}
+.swiper-pagination-bullet{
+    height: 0px;
+    background-color: wheat;
+}
+.swiper-container { 
+    width: 100%; max-width: 1200px; 
+}
+.swiper-slide { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    overflow: hidden; 
+}
+

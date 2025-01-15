@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-shadow: 0;
+}
+div.main-admin{
+    display: flex;
+    flex: 1 1 150vw;
+    flex-direction: column;
+}
+
+nav.nav-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 3px;
+    background-image: linear-gradient(to right ,#06444a,#46d2e7,#06444a);
+    display: flex;
+    flex: 1 1 200px;
+    height: 1px;
+    border-bottom: 5px solid black;
+    & ul {
+        height: 70px;
+        border-top: solid 2px white;
+        background-color: #06444a;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        & li{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 60px;
+            padding: 0 2%;
+        }
+        & a.Link-POST{
+            color: rgb(255, 255, 255);
+        }
+        & li:hover, a.Link-POST:hover{
+            background-color: #0d7983;
+            text-decoration: underline;
+        }
+    }
+}
+
+main.conteudo-main{
+    background-color: white;
+    flex: 20 1 800px;
+    height: flex;
+    flex-direction: column;
+    & .Name-User{
+        display: flex;
+        height: 90px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    & .Post{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 400px;
+        & .conteiner{
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px;
+            width: 50%;
+            height: 300px;
+            background-color: #06444a;
+        }
+        & .itens{
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            color: aliceblue;
+        }
+
+    }
+}
+
+footer.footer-admin{
+    margin-top: 3px;
+    background-image: linear-gradient(to right ,#06444a,#06444a);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 20 1 100px;
+    height: flex;
+}
+@media (width: 1440px){
+    main.conteudo-main{
+        flex: 25 1 850px;
+        min-height: 900px;
+        height: calc(110vw + 150vw);
+    }
+}
+@media screen and (max-width: 1024px){
+    main.conteudo-main{
+        flex: 35 1 950px;
+        height: flex;
+    }
+}

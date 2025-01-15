@@ -1,0 +1,95 @@
+
+
+.Container-Obras-View{
+    flex: 1 1 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 3%;
+    justify-content: center;
+    & .tithe{
+        padding-top: 9px;
+        margin-bottom: 8px;
+        width: 100%;
+    }
+    & .Grid-Obras{
+        padding-right: 5%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+.Card{
+    color: white;
+    border-radius: 6px;
+    margin-bottom: 2%;
+    width: 80%;
+    background-color: rgb(6, 68, 74, 0.3);
+    border: 1px solid aqua;
+    height: 100px;
+    & .Conteudo-Obra-View{
+        padding: 10px;
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        height: 100%;
+    }
+    & .Nome-Obra-View{
+        width: 60%;
+    }
+    & .Container-Number{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        background-color: #0f8496;
+        background-image: linear-gradient(to right bottom, #0a525e, #0f7f91, #00ddff);
+        border-radius: 4px;
+        width: 35px;
+        height: 35px;
+        transform: rotate(45deg);
+        & .Id-obra{
+            font-size: 19px;
+            font-family: "Rubik", serif;
+            color: rgb(255, 255, 255);
+            transform: rotate(-45deg);
+        }
+    }
+    & .img-logo-obra{
+        padding-left: 33px;
+        height: 100%;
+        & img{
+            position: absolute;
+            border-radius: 5px;
+            margin-top: 10px;
+            width: 60px;
+            background-color: white;
+            height: 80px;
+        }
+    }
+}
+
+.Card:hover{
+    background-color: rgb(6, 68, 74);
+}
+
+@media screen and (max-width: 850px){
+    & .Conteudo-Obra-View{
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width: 1115px){
+    .card{
+        & .Conteudo-Obra-View{
+            justify-content: flex-end;
+        }
+        & .Nome-Obra-View{
+            width: 20%;
+        }
+    }
+}

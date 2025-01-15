@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div.Main{
+    display: flex;
+    flex: 1 1 200vw;
+    flex-wrap: wrap;
+    background-color: black;
+}
+header, nav, main, footer{
+    display: flex;
+}
+header.Pes-Nav{
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right ,#06444a,#46d2e7,#06444a);
+    border-bottom: 4px solid white;
+    flex: 1 1 50vw;
+    height: 100px;
+}
+nav.main-bar2{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 60px;
+}
+img.Logo2{
+    display: block;
+    padding: 0 10px;
+}
+div.nav-grupo2{
+    width: 78%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ul {
+    display: flex;
+    padding: 0 10px;
+    & li{
+        padding: 0 3px;
+    }
+    & li, a{
+        text-decoration: none;
+        list-style: none;
+        color: white;
+        font-size: 20px;
+        font-family: Impact;
+    }
+}
+a.Bar2:hover{
+    text-decoration: underline solid 2px ;
+    font-size: 22px;
+}
+main.Conteudo-main2{
+    margin: 10px;
+    flex: 20 1 700px;
+    height: calc(160vw - 25vw);
+}
+footer.name-blue-scan2{
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    background-color: #06444a;
+    flex: 1 1 50vw;
+    height: 100px;
+}
+.name-BS2{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+}
+@media (width: 1440px){
+    main.Conteudo-main2{
+        flex: 10 1 800px;
+        height: calc(160vw - 25vw);
+    }
+}
+@media screen and (max-width: 1024px){
+    main.Conteudo-main2{
+        flex: 20 1 800px;
+        height: calc(160vw + 25vw);
+    }
+}
+@media screen and (max-width: 680px) {
+    main.Conteudo-main2{
+        flex: 20 1 700px;
+        height: calc(160vw + 100vw);
+    }
+    img.Logo22{
+        display: none;
+    }
+    div.nav-grupo2{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 400px){
+    main.Conteudo-main2{
+        flex: 20 1 700px;
+        height: calc(160vw + 125vw);
+    }
+    img.Logo2{
+        display: none;
+    }
+    div.nav-grupo2{
+        width: 100%;
+    }
+}

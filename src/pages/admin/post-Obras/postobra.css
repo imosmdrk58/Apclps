@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.Conteudo-Post-Obras{
+    background-color: white;
+    display: flex;
+    padding: 2%;
+    align-items: flex-start;
+    justify-content: center;
+    max-height: 1100px;
+    height: flex;
+    border-bottom: 4px solid black;
+}
+.Container-From{
+    flex: 0 1 400px;
+    height: flex;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #027580;
+    border-radius: 10px;
+    & .Post-form{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        & .Post-input{
+            width: 100%;
+            background-color: white;
+            margin-top: 20px;
+            padding: 10px;
+            color: black;
+            border: 3px solid #027580;
+            outline: 1px solid white;
+            border-radius: 5px;
+        }
+        & #Post-Description{
+            height: 140px;
+            text-align: left;
+            vertical-align: text-top;
+        }
+        & .submit-post{
+            margin-top: 20px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: white;
+        }
+    }
+}
+.Dropdown{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    & .Dropdow-Menu{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        background-color: white;
+        padding: 5px;
+        margin: 2px;
+        color: black;
+        border-radius: 5px;
+        & .Generos-box{
+            width: 100%;
+            display: flex;
+            & .box{
+                display: flex;
+            }
+        }
+    }
+    & .dropdown-toggle{
+        padding: 10px;
+        background-color: white;
+        border: none;
+        border-radius: 5px;
+    }
+}

@@ -1,0 +1,45 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+/*
+  Style da pagina de error
+*/
+.error-page{
+  display: flex;
+  height: 100svh;
+  background-color: black;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  & h1.Error-status{
+      font-size: 48px;
+  }
+  & .Error-status{
+      color: white;
+      padding: 5px;
+  }
+  & .Message-status{
+      color: white;
+      padding-bottom: 20px;
+  }
+  & .Button-navigate{
+      padding: 15px;
+      border-radius: 10px;
+      border: none;
+      box-shadow: 0px 35px 25px aqua;
+  }
+  & .Button-navigate:hover{
+      background-color: black;
+      color: white;
+      border: solid 2px aqua;
+  }
+}
+.Carregamento{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

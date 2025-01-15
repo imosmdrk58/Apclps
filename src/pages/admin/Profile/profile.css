@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+div.Container-infor{
+    width: 100%;
+    min-height: 800px;
+    padding: 2% 8%;
+    & div.Container-itens{
+        border-radius: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        padding: 0 10%;
+        width: 100%;
+        height: 100%;
+        background-color: #027580;
+        background-image: linear-gradient(to top, rgb(10, 80, 87), rgb(2, 117, 128), rgb(2, 117, 128), rgb(2, 117, 128));
+        & div.img-logo{
+            width: 200px;
+            height: 200px;
+            margin: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 4px solid #027580;
+            outline: 3px solid white;
+            border-radius: 100%;
+            margin-bottom: 1%;
+            background-color: white;
+            & img{
+                border-radius: 100%;
+                max-width: 200px;
+                max-height: 200px;
+                object-fit: cover;
+            }
+        }
+        & div.grupo-itens{
+            margin: 30px;
+            background-color: white;
+            border-radius: 1rem;
+            padding: 1%;
+            border-top: 4px solid #027580;
+            outline: 2px solid white;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-around;
+            flex-direction: column;
+            height: flex;
+            width: 100%;
+            & h4, h3{
+                margin-top: 1%;
+                width: 100%;
+                color: black;
+            }
+            
+        }
+        & .editar{
+            display: block;
+            margin: 30px;
+            width: 100%;
+            border: none;
+            border-radius: 2rem;
+            padding: 1%;
+            font-size: 22px;
+        }
+        & .editar:hover{
+            color: black;
+            background-color: #cccccc;
+        }
+    }
+}
+
+div.Container-editar{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 0 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & div.Container-form{
+        background-image: linear-gradient(to top, rgb(10, 80, 87), rgb(2, 117, 128), rgb(2, 117, 128), rgb(2, 117, 128));
+        border: 2px solid black;
+        border-radius: 1rem;
+        background-color: #027580;
+        height: flex;
+        padding: 0 2%;
+    }
+    & .close-editar{
+        margin: 10px;
+        border: none;
+        border-radius: 2rem;
+        padding: 1%;
+        font-size: 22px; 
+        width: 10%;
+    }
+    & .close-editar:hover{
+        background-color: rgb(245, 50, 92);
+        color: white;
+    }
+    & .Form-editar{
+        width: 100%;
+        & .gruop-itens{
+            display: flex;
+            padding: 4% 0;
+            flex-direction: column;
+            & .iten-editar{
+                border-radius: 5px;
+                border: 2px solid #027580;
+                outline: 2px solid white;
+                width: 100%;
+                margin-top: 2%;
+                background-color: white;
+                padding: 7px;
+            }
+            & button:hover{
+                border: 2px solid white;
+            }
+        }
+    }
+}

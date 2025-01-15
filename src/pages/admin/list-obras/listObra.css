@@ -1,0 +1,15 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.Container-List-Obras{
+    width: 100%;
+    padding: 10%;
+    height: flex;
+}
+
+button.MuiButtonBase-root.MuiButton-root.MuiButton-container.MuiButton-containerPrimary.MuiButton-sizeMedium.MuiButton-containerSizeMedium.MuiButton-colorPrimary.MuiButton-root.MuiButton-container.MuiButton-containerPrimary.MuiButton-sizeMedium.MuiButton-containerSizeMedium.MuiButton-colorPrimary.Button-Link-Obra.css-1qbbkhw-MuiButtonBase-root-MuiButton-root{
+    background-color: lightgray;
+}
