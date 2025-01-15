@@ -1,5 +1,5 @@
-<h1 center>Blue Scan</h1>
-# React + Vite
+<h1 align="center">Blue Scan</h1>
+<h2 align="center">React + Vite</h2>
 
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
