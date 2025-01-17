@@ -1,0 +1,50 @@
+.Card-Header{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    & .infor{
+        color: white;
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+        padding: 10% 0% 2% 4%;
+        flex-direction: column;
+        justify-content: space-between;
+        & button{
+            border: 1px solid white;
+            box-shadow: 10px  0px 20px ;
+            border-radius: 1rem;
+            padding: 20px;
+            background-color: rgb(156, 172, 20);
+            display: flex;
+            align-items: center;
+            & a{
+                font-size: 15px;
+                color: rgb(0, 0, 0);
+                text-decoration: none;
+            }
+        }
+        & button:hover{
+            background-color: rgb(129, 141, 16);
+        }
+    }
+
+    & .Logo-Obra{
+        border: 2px solid rgb(255, 255, 255);
+        z-index: 0;
+        transform: translate(300px) perspective(200px) rotate(25deg);
+        width: 400px;
+        height: 800px;
+        object-fit: cover;
+    }
+}
+
+.swiper-pagination-bullet{
+    background-color: rgb(156, 172, 20);
+}

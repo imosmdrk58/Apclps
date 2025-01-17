@@ -66,7 +66,7 @@ function Admin(){
                 <NameUsuario />
                 <Outlet/>
             </main>
-            <footer className="footer-admin">
+            <footer className="footer-admin mt-auto">
                 <h2>Blue Scan</h2>
             </footer>
         </div>

@@ -17,7 +17,7 @@ export const AuthProvider = ({ children }) => {
       if (response.status === 201){
         localStorage.setItem('token', response.data.token);
         setIsAuthenticated(true);
-        navigate('/admin');
+        navigate('admin/postobras');
       }else{
         console.error('Resposta do servidor:', response);
         alert('Credenciais inválidas, por favor, tente novamente.', response);

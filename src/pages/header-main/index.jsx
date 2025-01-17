@@ -26,7 +26,7 @@ function Topbar() {
         </nav>
       </header>
       <main className="Conteudo-main">{<Main/>}</main>
-      <footer className="name-blue-scan">
+      <footer className="name-blue-scan mt-auto">
         <h2 className="name-BS">Blue Scans</h2>
       </footer>
     </div>

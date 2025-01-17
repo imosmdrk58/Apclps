@@ -56,6 +56,9 @@ div.card:hover{
 
 
 /* Aqui foi feito os ajuste para o carrosel de card */
+.swiper{
+    width: 100%;
+}
 div.swiper-wrapper{
     width: 96vw;
 } 

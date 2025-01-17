@@ -57,7 +57,7 @@ a.Bar:hover{
     font-size: 22px;
 }
 main.Conteudo-main{
-    padding: 2%;
+    width: 100%;
     flex: 20 1 700px;
     height: flex;
 }

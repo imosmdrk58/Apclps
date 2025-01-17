@@ -1,5 +1,6 @@
 import { useEffect ,useRef, useState } from "react";
 import Slide from "./slide";
+import SlideHeader from "./slideHeader";
 import './style/indexStyle.css';
 import StarsIcon from '@mui/icons-material/Stars';
 import CardGrid from "./card";
@@ -7,6 +8,9 @@ import CardGrid from "./card";
 function Main(){
     return(
         <div className='Conteudo'>
+            <div className="Slide-header">
+                <SlideHeader/>
+            </div>
             <div className="Top-Obras">
                 <h2 className="Titulo-Top-Obras"><StarsIcon color="white" fontSize="large" className="icon"/>Top Obras</h2>
                 <div className="Obras-Grupo">

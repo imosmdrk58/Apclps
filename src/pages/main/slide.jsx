@@ -3,7 +3,7 @@ import SoloLeveling from '../../assets/Solo-levenlig-copia-teste.jpg'
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import { Navigation, Pagination} from 'swiper/modules';
+import { Navigation, Pagination, Autoplay} from 'swiper/modules';
 import './style/slide.css'
 
 function Slide() {
@@ -19,10 +19,14 @@ function Slide() {
 
     return (
         <Swiper
-            modules={[Navigation, Pagination]}
-            spaceBetween={2}
-            slidesPerView={6}
+            modules={[Navigation, Pagination, Autoplay]}
+            spaceBetween={1}
+            slidesPerView={6.5}
             navigation
+            autoplay={{
+                delay: 2000,
+                disableOnInteraction: false,
+            }}
             pagination={{ clickable: true }}
             breakpoints={{
                 300: {
@@ -42,8 +46,8 @@ function Slide() {
                     spaceBetween: 3,
                 },
                 1110: {
-                    slidesPerView: 6,
-                    spaceBetween: 2,
+                    slidesPerView: 6.5,
+                    spaceBetween: 1,
                 }
             }}
         >
